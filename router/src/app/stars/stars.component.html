@@ -1,0 +1,8 @@
+<p>
+  <!--class后边绑定的东西是一个css样式，它的值要绑定到当前star变量上-->
+  <!--整句含义：span这个html元素是否出现这样一个css样式是由star这个属性决定的，如果star是true那么span元素就会多出这个样式来，false就不会出现这个样式-->
+  <span *ngFor="let star of stars" class="glyphicon glyphicon-star "
+        [class.glyphicon-star-empty]="star"></span>
+
+  <span>{{rating}}星</span>
+</p>

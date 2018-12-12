@@ -1,0 +1,17 @@
+<!--用angular中的ngFor指令：products属性和后台的products属性绑到一起，指令含义：循环products属性，把每次循环的元素放到product变量里。中间那段HTML里就可以使用product这个变量，来用插值表达式显示product里的一些属性-->
+<div  *ngFor="let product of products" class="col-md-4 col-md-4 col-md-4">
+  <div class="thumbnail">
+    <!--用占位符代替图片-->
+    <img src="http://placehold.it/320x150">
+    <div class="caption">
+      <!--使用插值表达式显示变量中的属性-->
+      <h4 class="pull-right">{{product.price}}元</h4>
+      <h4><a>{{product.title}}</a></h4>
+      <p>{{product.desc}}</p>
+    </div>
+    <div>
+      <!--星级评价的rating属性由产品的rating属性传进去-->
+      <app-stars [rating]="product.rating"></app-stars>
+    </div>
+  </div>
+</div>

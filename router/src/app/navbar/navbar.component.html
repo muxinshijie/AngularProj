@@ -1,0 +1,28 @@
+<!--inverse表示导航条是黑底白色的：，fixed-top表示：固定到顶部-->
+<nav class="navbar navbar-iversen navbar-fixed-top">
+  <!--设置一个大容器-->
+  <div class="container">
+
+    <!--生成一个写程序名字-->
+    <div class="navbar-header">
+      <!--加一个button：作用就是在屏幕缩小时，点击按钮可以让三个子菜单以下拉的形式出现-->
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <!--加三个横线让按钮更明显-->
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">在线竞拍</a>
+    </div>
+
+    <!--三个子菜单的链接-->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav">
+        <li><a href="#">关于我们</a></li>
+        <li><a href="#">联系我们</a></li>
+        <li><a href="#">网站地图</a></li>
+      </ul>
+    </div>
+
+  </div>
+</nav>
